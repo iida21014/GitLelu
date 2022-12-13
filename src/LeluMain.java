@@ -33,3 +33,24 @@ class Lelu{
 	
 	
 }
+
+class VieteriAuto extends Lelu{
+	
+	public int nopeus;
+	
+	public VieteriAuto() {
+		nimi="";
+		paino=0;
+		nopeus=0;
+	}
+	
+	public void kiihdyta() {
+		nopeus = nopeus ++;
+	}
+	
+	@Override
+	public void tulostaTiedot() {
+		super.tulostaTiedot();
+		System.out.println("Nopeus: " + nopeus);
+	}
+}
